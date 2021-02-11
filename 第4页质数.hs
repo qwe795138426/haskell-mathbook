@@ -1,15 +1,13 @@
-prime_number_1 x = primeNumber (read x) 
-
-primeNumber n 
-    |n == 1 = error "不能等于1"
-    |n mod 2 == 1 = print "False"
-    |3 > (n-1) = print "Ture"
-    |otherwise = print "False"
+primeNumber :: (Eq a, Fractional a) => a -> IO ()
+primeNumber x
+    |x==1 = error "Can't be equal to 1"
+    |(x/2)==0 || (x/3)==0 || (x/5)==0 = print "False" 
+    |otherwise = print "True"
 
 
-
+main :: IO ()
 main = do
-    print "输入n"
-    number_1 <- getLine
-    prime_number_1 number_1
-    
+    print "n"
+    num_1 <- getLine
+    let num_2 = read num_1 ::Integer
+    print "total"
