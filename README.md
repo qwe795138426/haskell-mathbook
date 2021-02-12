@@ -16,5 +16,5 @@
 * 在haskell官网下载对应系统版本的GHC或者haskell-platform套件
 * 在终端运行runghc ***.hs运行或用ghc ***.hs命令编译出.exe文件执行
 
-##更新
+## 更新
 随缘
