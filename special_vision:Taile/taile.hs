@@ -1,5 +1,5 @@
 main :: IO ()
-main = do 
+main = do
     putStrLn "testing release(DANGEROUS)"
     putStrLn "powered by haskell"
     putStrLn "it is designed for ex"
@@ -9,15 +9,16 @@ main = do
     b <- getLine
     let a_1=read a :: Double
     let b_1=read b :: Integer
-    let answer= taileEx a_1 b_1
+    let answer= taileEx (a_1,b_1,0)
     print answer
 
 
 
-taileEx :: Fractional a => a -> Integer -> a
-taileEx a 0 = a
-taileEx a b = a^b/fromInteger(factorial b) + taileEx a b-1
- 
+
+taileEx :: Fractional c => (c, Integer, c) -> c
+taileEx (a,0,acc) = acc
+taileEx (a,b,acc) = taileEx (a,b-1,acc+a^b/fromInteger(factorial b))
+
 factorial :: (Eq p, Num p) => p -> p
-factorial 0 = 1   
-factorial n = n * factorial (n - 1)  
+factorial 0 = 1
+factorial n = n * factorial (n - 1) 
