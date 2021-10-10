@@ -1,4 +1,6 @@
 # haskell-mathbook
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fqwe795138426%2Fhaskell-mathbook.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fqwe795138426%2Fhaskell-mathbook?ref=badge_shield)
+
 ## 前言
 这是对数学的强大怨念的产物，其实我之前也用python写过一个（但我估计你们多半没看到*毕竟偷偷发的*），这个就当新年礼物吧（虽然迟发了几天）
 
@@ -18,3 +20,7 @@
 
 ## 更新
 随缘
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fqwe795138426%2Fhaskell-mathbook.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fqwe795138426%2Fhaskell-mathbook?ref=badge_large)
