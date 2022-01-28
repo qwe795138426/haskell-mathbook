@@ -1,7 +1,8 @@
+import System.IO.Utf8
 main :: IO ()
 main = do
-    putStrLn "testing release(DANGEROUS)"
-    putStrLn "powered by haskell"
+    putStrLn "测试版本(DANGEROUS)"
+    putStrLn "基于haskell"
     putStrLn "it is designed for ex"
     putStrLn "Please input a Index term"
     a <- getLine
